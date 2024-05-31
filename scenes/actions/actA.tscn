@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmymsuj558pcp"]
+
+[ext_resource type="Script" path="res://scenes/actions/actA.gd" id="1_e3tah"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="actA" type="CharacterBody2D" parent="."]
+script = ExtResource("1_e3tah")
