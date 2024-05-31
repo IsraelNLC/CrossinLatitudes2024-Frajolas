@@ -14,7 +14,7 @@ var space_time:float = 0.06
 var punctuation_time:float = 0.2
 
 # Sinal para indicar que a exibição do texto foi concluída
-signal finish_displaying()
+signal finished_displaying
 
 # Função para iniciar a exibição do texto
 func display_text(text_to_display:String):
@@ -54,7 +54,7 @@ func _display_letter():
 	# Verifica se todas as letras foram exibidas
 	if letter_index >= text.length():
 		# Emite o sinal indicando que a exibição foi concluída
-		finish_displaying.emit()
+		emit_signal("finished_displaying")
 		return
 	
 	# Ajusta o tempo do temporizador baseado no tipo de caractere

@@ -65,7 +65,7 @@ func _on_text_box_finished_displaying():
 # Função que trata a entrada não manipulada.
 func _unhandled_input(event):
 	if (
-		event.is_action_pressed("interact") &&  # Verifica se a ação "interact" foi pressionada.
+		event.is_action_pressed("ui_accept") &&  # Verifica se a ação "interact" foi pressionada.
 		is_dialog_active &&  # Verifica se o diálogo está ativo.
 		can_advance_line  # Verifica se é possível avançar para a próxima linha.
 	):
