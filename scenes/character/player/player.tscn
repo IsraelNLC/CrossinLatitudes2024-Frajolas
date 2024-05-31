@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://1u5u7ny8yn7y"]
+
+[ext_resource type="Texture2D" uid="uid://cl7ecp80mvwko" path="res://icon.svg" id="1_yt4kw"]
+
+[sub_resource type="GDScript" id="GDScript_cgcdf"]
+script/source = "extends CharacterBody2D
+
+@export var speed: float = 300
+@export var accel: float = 30
+
+@onready var anim_sprite: AnimatedSprite2D = $AnimatedSprite2D as AnimatedSprite2D
+
+func _physics_process(delta: float) -> void:
+	var direction: Vector2 = Input.get_vector('mov_left', 'move_right', 'mov_up', 'mov_down')
+	
+	velocity.x = move_toward(velocity.x, speed * direction.x, accel)
+	velocity.y = move_toward(velocity.y, speed * direction.y, accel)
+	
+	move_and_slide()
+	
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		print(\"I collided with \", collision.get_collider().name)
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bkooe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yt4kw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6cblb"]
+size = Vector2(111, 116)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_layer = 2
+script = SubResource("GDScript_cgcdf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bkooe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_6cblb")
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://g1cuagmquxn7"]
+
+[ext_resource type="Script" path="res://scenes/character/npc/test_interact/npc_interact.gd" id="1_l4wsy"]
+[ext_resource type="Texture2D" uid="uid://cl7ecp80mvwko" path="res://icon.svg" id="2_h6ok5"]
+[ext_resource type="PackedScene" uid="uid://jjfw5whvvnig" path="res://scenes/common/interaction/interaction area/interaction_area.tscn" id="3_6igoo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l74vl"]
+radius = 200.0
+height = 406.0
+
+[node name="NpcInteract" type="Node2D"]
+script = ExtResource("1_l4wsy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_h6ok5")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_6igoo")]
+action_name = "Teste"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CapsuleShape2D_l74vl")
