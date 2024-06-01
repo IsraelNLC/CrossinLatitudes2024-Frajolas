@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=11 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
@@ -62,6 +62,11 @@ MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
+
+[sub_resource type="Gradient" id="Gradient_q4nyq"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_1irl0"]
+gradient = SubResource("Gradient_q4nyq")
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
@@ -144,6 +149,13 @@ response_template = NodePath("ResponseExample")
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
 text = "Response example"
+
+[node name="CharLabelHolder" type="TextureRect" parent="."]
+offset_left = 253.0
+offset_top = 385.0
+offset_right = 509.0
+offset_bottom = 425.0
+texture = SubResource("GradientTexture1D_1irl0")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

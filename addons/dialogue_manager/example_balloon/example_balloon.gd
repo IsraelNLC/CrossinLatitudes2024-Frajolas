@@ -8,6 +8,8 @@ extends CanvasLayer
 
 @onready var balloon: Control = %Balloon
 @onready var character_label: RichTextLabel = %CharacterLabel
+@onready var character_label_holder: TextureRect = %CharLabelHolder
+@onready var character_image_holder: TextureRect = %CharImage
 @onready var dialogue_label: DialogueLabel = %DialogueLabel
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
 
