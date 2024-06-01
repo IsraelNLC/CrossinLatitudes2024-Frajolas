@@ -1,12 +1,12 @@
 extends Node2D
 
 var currentBeatIndex = 0
-var beatTimes = [[0.8,0.8,1],[1.6,1.6,1],[2.5,3.0,2],[3.5,3.5,1],[4.5,4.5,1],[5.4,6.4,2]]
+var beatTimes = [[0.8, 0.8, 1], [1.6, 1.6, 1], [2.5, 3.0, 2], [3.5, 3.5, 1], [4.5, 4.5, 1], [5.4, 6.4, 2]]
 
 @onready var beat = preload("res://scenes/common/beat.tscn")
-
 @onready var song = $AudioStreamPlayer
 @onready var beatTimer = $Timer
+@onready var visual = $visual_text
 
 var onBeat = false
 
@@ -18,14 +18,26 @@ func _ready():
 	song.play()
 	beatTimer.start()
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if currentBeatIndex > beatTimes.size() -1:
+	if currentBeatIndex > beatTimes.size() - 1:
 		onBeat = true
 	if onBeat == false and song.get_playback_position() >= beatTimes[currentBeatIndex][0]:
 		print(beatTimes[currentBeatIndex][0])
 		var newBeat = beat.instantiate()
+		if visual:
+			if beatTimes[currentBeatIndex][2] == 1:
+				visual.j_press()
+				visual.visible = true
+			elif beatTimes[currentBeatIndex][2] == 2:
+				visual.jk_press()
+				visual.visible = true
+			elif beatTimes[currentBeatIndex][2] == 3:
+				visual.jk_hold()
+				visual.visible = true
+		else:
+			print("Visual node is not instantiated")
+
 		newBeat.key = beatTimes[currentBeatIndex][2]
 		newBeat.start = beatTimes[currentBeatIndex][0]
 		newBeat.end = beatTimes[currentBeatIndex][1]

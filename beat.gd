@@ -31,7 +31,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("press1") or Input.is_action_just_pressed("press2") or Input.is_action_just_released("press1") or Input.is_action_just_released("press2"):
+	if Input.is_action_just_pressed("interact1") or Input.is_action_just_pressed("interact2") or Input.is_action_just_released("interact1") or Input.is_action_just_released("interact2"):
 		buttonTimer.start()
 	
 	if key == 1 and continuous == false:
@@ -53,7 +53,7 @@ func _process(delta):
 
 
 func _on_button_timer_timeout():
-	buttonPressing = Input.get_action_strength("press1") - Input.get_action_strength("press2")*2
+	buttonPressing = Input.get_action_strength("interact1") - Input.get_action_strength("interact2")*2
 	#print(buttonPressing)
 
 func _on_start_beat_hit_window_timeout():
