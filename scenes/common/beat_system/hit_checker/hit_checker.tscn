@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://luxlreuhtqq0"]
+
+[ext_resource type="Texture2D" uid="uid://p2giyeetto8l" path="res://sprites/stages/beat-system/hit-checker.png" id="1_a62cl"]
+[ext_resource type="Texture2D" uid="uid://dmrhuqqdjpkxm" path="res://sprites/stages/beat-system/hor-hit-checker.png" id="1_mmyt2"]
+[ext_resource type="Script" path="res://scenes/common/beat_system/hit_checker/hit_checker.gd" id="2_7hetx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jpwfy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mmyt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_a62cl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3a2y8"]
+size = Vector2(972, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_523s4"]
+size = Vector2(942.049, 123.949)
+
+[node name="HitChecker" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_jpwfy")
+script = ExtResource("2_7hetx")
+
+[node name="PerfectArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PerfectArea"]
+shape = SubResource("RectangleShape2D_3a2y8")
+
+[node name="GoodArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GoodArea"]
+rotation = -0.00212333
+shape = SubResource("RectangleShape2D_523s4")
+debug_color = Color(0, 0.637074, 0.396798, 0.42)
+
+[node name="PushTimer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="PerfectArea" to="." method="_on_perfect_area_area_entered"]
+[connection signal="area_exited" from="PerfectArea" to="." method="_on_perfect_area_area_exited"]
+[connection signal="area_entered" from="GoodArea" to="." method="_on_good_area_area_entered"]
+[connection signal="area_exited" from="GoodArea" to="." method="_on_good_area_area_exited"]
+[connection signal="timeout" from="PushTimer" to="." method="_on_push_timer_timeout"]
