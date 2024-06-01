@@ -10,6 +10,8 @@ script/source = "extends CharacterBody2D
 
 @onready var anim_sprite: AnimatedSprite2D = $AnimatedSprite2D as AnimatedSprite2D
 
+
+
 func _physics_process(delta: float) -> void:
 	var direction: Vector2 = Input.get_vector('mov_left', 'move_right', 'mov_up', 'mov_down')
 	
@@ -21,6 +23,8 @@ func _physics_process(delta: float) -> void:
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		print(\"I collided with \", collision.get_collider().name)
+
+
 "
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bkooe"]
