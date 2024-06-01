@@ -75,7 +75,7 @@ pause={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://example.dialogue")
+locale/translations_pot_files=PackedStringArray("res://example.dialogue", "res://introcutscene.dialogue", "res://testdialogue.dialogue")
 
 [layer_names]
 

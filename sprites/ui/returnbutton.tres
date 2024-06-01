@@ -1,0 +1,19 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://c8seprt0okhlm"]
+
+[ext_resource type="Texture2D" uid="uid://b07kx7xtd3rly" path="res://sprites/ui/ReturnButton.png" id="1_wkj4s"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_82h6i"]
+texture = ExtResource("1_wkj4s")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vyceg"]
+texture = ExtResource("1_wkj4s")
+modulate_color = Color(0.839216, 0.839216, 0.839216, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l5eq7"]
+texture = ExtResource("1_wkj4s")
+modulate_color = Color(0.603922, 0.603922, 0.603922, 1)
+
+[resource]
+Button/styles/hover = SubResource("StyleBoxTexture_82h6i")
+Button/styles/normal = SubResource("StyleBoxTexture_vyceg")
+Button/styles/pressed = SubResource("StyleBoxTexture_l5eq7")

@@ -1,12 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://ducxbsunb78ng"]
+[gd_scene load_steps=16 format=3 uid="uid://ducxbsunb78ng"]
 
 [ext_resource type="Script" path="res://scenes/menu/main_menu/main_menu.gd" id="1_nkayv"]
-[ext_resource type="Texture2D" uid="uid://ea38sgdvefup" path="res://sprites/ui/background.png" id="2_7ce4i"]
-[ext_resource type="Theme" uid="uid://crsoagoyedd6k" path="res://sprites/ui/new_theme.tres" id="2_it5ex"]
-[ext_resource type="Texture2D" uid="uid://dlthw86p21pcd" path="res://sprites/ui/A frajolas’ game - 2024.png" id="3_dwv5d"]
-[ext_resource type="Theme" uid="uid://dgl0rii3kdqss" path="res://sprites/ui/playbutton.tres" id="5_ut8c8"]
-[ext_resource type="Theme" uid="uid://0wn63knbdfkm" path="res://sprites/ui/creditsbutton.tres" id="6_156js"]
-[ext_resource type="Texture2D" uid="uid://cpvthy03asc71" path="res://sprites/ui/bgmainmenu.png" id="7_gtnuc"]
+[ext_resource type="Texture2D" path="res://sprites/ui/background.png" id="2_7ce4i"]
+[ext_resource type="Theme" uid="uid://dm5wlytkdt22i" path="res://sprites/ui/new_theme.tres" id="2_it5ex"]
+[ext_resource type="Texture2D" path="res://sprites/ui/A frajolas’ game - 2024.png" id="3_dwv5d"]
+[ext_resource type="Theme" uid="uid://cpjmbqrdvp2tp" path="res://sprites/ui/playbutton.tres" id="5_ut8c8"]
+[ext_resource type="Theme" uid="uid://brqh2imbi1ndj" path="res://sprites/ui/creditsbutton.tres" id="6_156js"]
+[ext_resource type="Texture2D" path="res://sprites/ui/bgmainmenu.png" id="7_gtnuc"]
+[ext_resource type="Texture2D" uid="uid://cebauyiegud0p" path="res://sprites/ui/EmilLogo.png" id="8_7jeu8"]
+[ext_resource type="Texture2D" uid="uid://cx2a4qvuat4e5" path="res://sprites/ui/personagens 2.png" id="9_gno3r"]
+[ext_resource type="Texture2D" uid="uid://dajk1aic84ngn" path="res://sprites/ui/personagens 3.png" id="10_d8a71"]
+[ext_resource type="Texture2D" uid="uid://cqbfe8h7folgg" path="res://sprites/ui/personagens 1.png" id="11_hvco7"]
+[ext_resource type="Texture2D" uid="uid://crmctl3j22sky" path="res://sprites/ui/personagens 2-1.png" id="12_fipm2"]
+[ext_resource type="Theme" uid="uid://c8seprt0okhlm" path="res://sprites/ui/returnbutton.tres" id="13_o3j6o"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qg374"]
 texture = ExtResource("2_7ce4i")
@@ -21,7 +27,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_nkayv")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
@@ -94,11 +101,18 @@ layout_mode = 2
 
 [node name="Credits" type="Button" parent="Panel/MarginContainer/VBoxContainer/Control"]
 custom_minimum_size = Vector2(150, 125)
-layout_mode = 2
-offset_left = 92.0
-offset_top = -48.5
-offset_right = 292.0
-offset_bottom = 76.5
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -54.5
+offset_right = 110.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 0
 theme = ExtResource("6_156js")
 text = " "
 
@@ -107,6 +121,225 @@ visible = false
 layout_mode = 2
 text = "Options"
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -438.0
+offset_top = -721.0
+offset_right = 4.0
+offset_bottom = -416.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("8_7jeu8")
+expand_mode = 1
+
+[node name="FrontscreenTexture" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -642.0
+offset_top = -685.0
+offset_right = -602.0
+offset_bottom = -645.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect3" type="TextureRect" parent="FrontscreenTexture"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 1043.0
+offset_top = 203.0
+offset_right = 1272.0
+offset_bottom = 714.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("9_gno3r")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="FrontscreenTexture"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 778.0
+offset_top = 178.0
+offset_right = 1075.0
+offset_bottom = 769.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("10_d8a71")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="FrontscreenTexture"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 124.0
+offset_top = 174.0
+offset_right = 417.0
+offset_bottom = 792.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("11_hvco7")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="FrontscreenTexture"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -135.0
+offset_top = 83.0
+offset_right = 211.0
+offset_bottom = 813.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("12_fipm2")
+expand_mode = 1
+
+[node name="Return" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -239.0
+offset_top = -145.0
+offset_right = -39.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("13_o3j6o")
+text = " "
+
+[node name="VBOXCredits" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -350.0
+offset_top = -458.0
+offset_right = 350.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 0.980392, 0.894118, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 32
+text = "Producer and Narrative Design and Writing"
+fit_content = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 20
+text = "Anna Aragão"
+fit_content = true
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 0.980392, 0.894118, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 32
+text = "Voiceover"
+fit_content = true
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 20
+text = "Anna Aragão (Cooking time, Laila and Enio), Israel Carvalho (Emil) & BG (Lucas)"
+fit_content = true
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 0.980392, 0.894118, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 32
+text = "Game Design & Programming"
+fit_content = true
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 20
+text = "Mihaell Klosowski, Israel Carvalho, Alexandre Luz & BG
+"
+fit_content = true
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 0.980392, 0.894118, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 32
+text = "UI/UX"
+fit_content = true
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 20
+text = "Alexandre Luz"
+fit_content = true
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 0.980392, 0.894118, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 32
+text = "Art & Animations"
+fit_content = true
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="VBOXCredits"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 20
+text = "Gabriella Marquetti & Isabela Luz"
+fit_content = true
+
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Control/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="Return" to="." method="_on_button_pressed"]
