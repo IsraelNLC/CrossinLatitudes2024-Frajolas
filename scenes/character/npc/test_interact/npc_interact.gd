@@ -5,7 +5,7 @@ extends Node2D
 @export var selectedindex = 0
 
 @export var lines: Array[String] = [
-	"this_is_a_node_title",
+	"cutscenestart",
 	"this_is_another_title",
 ]
 
@@ -17,4 +17,4 @@ func _ready():
 
 func _interact():
 	print('interact successful')
-	DialogueManager.show_example_dialogue_balloon(load("res://example.dialogue"), lines[selectedindex])
+	DialogueManager.show_example_dialogue_balloon(load("res://introcutscene.dialogue"), lines[selectedindex])
