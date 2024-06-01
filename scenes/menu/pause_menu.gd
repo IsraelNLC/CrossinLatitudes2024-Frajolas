@@ -8,4 +8,4 @@ func _on_resume_pressed():
 
 
 func _on_quit_pressed():
-	get_tree().quit()
+	get_tree().quit() #vai mudar para voltar para o menu
