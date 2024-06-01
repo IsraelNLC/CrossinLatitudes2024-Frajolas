@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://1u5u7ny8yn7y"]
 
-[ext_resource type="Texture2D" uid="uid://cl7ecp80mvwko" path="res://icon.svg" id="1_yt4kw"]
+[ext_resource type="Texture2D" uid="uid://vjfc85upi8xb" path="res://sprites/character/lobofinlandia.png" id="1_effb1"]
 
 [sub_resource type="GDScript" id="GDScript_cgcdf"]
 script/source = "extends CharacterBody2D
@@ -23,11 +23,11 @@ func _physics_process(delta: float) -> void:
 		print(\"I collided with \", collision.get_collider().name)
 "
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_bkooe"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_in8rm"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_yt4kw")
+"texture": ExtResource("1_effb1")
 }],
 "loop": true,
 "name": &"default",
@@ -42,7 +42,7 @@ collision_layer = 2
 script = SubResource("GDScript_cgcdf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_bkooe")
+sprite_frames = SubResource("SpriteFrames_in8rm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
