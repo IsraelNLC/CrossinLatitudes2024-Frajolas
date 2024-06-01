@@ -74,6 +74,7 @@ variation_opentype = {
 2003265652: 900
 }
 variation_embolden = 1.0
+spacing_space = 8
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
