@@ -17,4 +17,4 @@ func _ready():
 
 func _interact():
 	print('interact successful')
-	DialogueManager.start_dialog(global_position,lines)
+	DialogueManager.show_example_dialogue_balloon(load("res://example.dialogue"), "this_is_a_node_title")
