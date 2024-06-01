@@ -1,0 +1,19 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://0wn63knbdfkm"]
+
+[ext_resource type="Texture2D" uid="uid://c8gsmq3woau8m" path="res://sprites/ui/CreditsButton.png" id="1_aehaf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ity04"]
+texture = ExtResource("1_aehaf")
+modulate_color = Color(0.756863, 0.756863, 0.756863, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cmbvj"]
+texture = ExtResource("1_aehaf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6t23i"]
+texture = ExtResource("1_aehaf")
+modulate_color = Color(0.537255, 0.537255, 0.537255, 1)
+
+[resource]
+Button/styles/hover = SubResource("StyleBoxTexture_ity04")
+Button/styles/normal = SubResource("StyleBoxTexture_cmbvj")
+Button/styles/pressed = SubResource("StyleBoxTexture_6t23i")

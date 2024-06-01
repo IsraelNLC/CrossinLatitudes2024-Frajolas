@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://dgl0rii3kdqss"]
+
+[ext_resource type="Texture2D" uid="uid://bcs6w06c7t8qv" path="res://sprites/ui/PlayButton.png" id="1_16rxx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6km28"]
+texture = ExtResource("1_16rxx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dtext"]
+texture = ExtResource("1_16rxx")
+modulate_color = Color(0.796078, 0.796078, 0.796078, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kpr06"]
+texture = ExtResource("1_16rxx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ulpfp"]
+texture = ExtResource("1_16rxx")
+modulate_color = Color(0.588235, 0.588235, 0.588235, 1)
+
+[resource]
+/styles/panel = SubResource("StyleBoxTexture_6km28")
+Button/styles/hover = SubResource("StyleBoxTexture_dtext")
+Button/styles/normal = SubResource("StyleBoxTexture_kpr06")
+Button/styles/pressed = SubResource("StyleBoxTexture_ulpfp")
