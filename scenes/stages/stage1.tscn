@@ -14,6 +14,6 @@ stream = ExtResource("2_mb3pl")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
 
-[node name="visual_text" type="Sprite2D" parent="."]
+[node name="visual_test" type="Sprite2D" parent="."]
 texture = ExtResource("3_ppjdh")
 script = ExtResource("3_tiwbc")
