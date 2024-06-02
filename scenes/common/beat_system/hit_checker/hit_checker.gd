@@ -43,7 +43,7 @@ func _ready():
 			feedback_sprite.self_modulate.a = 0
 		INPUT.INPUT03:
 			frame = 2
-			input = 'interact03'
+			input = 'interact3'
 			feedback_sprite.frame = 4
 			frame_base = feedback_sprite.frame
 			feedback_sprite.self_modulate.a = 0
