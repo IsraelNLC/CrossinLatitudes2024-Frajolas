@@ -20,9 +20,15 @@ func play_1():
 		tigela1.frame = 1
 	ralador1.play("default")
 	played1 = true
+	await ralador1.animation_looped
+	ralador1.stop()
+	return 1
 
 func play_2():
 	if  played2:
 		tigela2.frame = 1
 	ralador2.play("default")
 	tigela2.frame = 1
+	await ralador2.animation_looped
+	ralador2.stop()
+	return 1
