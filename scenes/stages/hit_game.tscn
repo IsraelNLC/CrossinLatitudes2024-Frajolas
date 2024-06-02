@@ -21,7 +21,7 @@ input_type = 1
 
 [node name="Conductor" parent="." instance=ExtResource("2_8claq")]
 stream = ExtResource("4_yqsva")
-bpm = 130
+measures = 8
 
 [connection signal="sig_beat" from="Conductor" to="." method="_on_conductor_sig_beat"]
 [connection signal="sig_measure" from="Conductor" to="." method="_on_conductor_sig_measure"]

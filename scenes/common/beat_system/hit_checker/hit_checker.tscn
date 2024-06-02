@@ -32,16 +32,16 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3a2y8"]
-size = Vector2(198, 62)
+size = Vector2(198, 74)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_523s4"]
-size = Vector2(213.983, 136.696)
+size = Vector2(213.983, 159.021)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5n6gc"]
-size = Vector2(126, 515)
+size = Vector2(126, 310)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d1b6m"]
-size = Vector2(126, 76)
+size = Vector2(126, 204)
 
 [node name="HitChecker" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_jpwfy")
@@ -50,12 +50,13 @@ script = ExtResource("2_7hetx")
 [node name="PerfectArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PerfectArea"]
+position = Vector2(0, -134)
 shape = SubResource("RectangleShape2D_3a2y8")
 
 [node name="GoodArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoodArea"]
-position = Vector2(0.0113514, 5.34605)
+position = Vector2(-0.30678, -144.48)
 rotation = -0.00212333
 shape = SubResource("RectangleShape2D_523s4")
 debug_color = Color(0, 0.637074, 0.396798, 0.42)
@@ -65,14 +66,14 @@ debug_color = Color(0, 0.637074, 0.396798, 0.42)
 [node name="FeedbackArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FeedbackArea"]
-position = Vector2(0, -393.5)
+position = Vector2(0, -381)
 shape = SubResource("RectangleShape2D_5n6gc")
 debug_color = Color(0.896596, 0.257291, 0.477708, 0.42)
 
 [node name="FeedbackAreaEnd" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FeedbackAreaEnd"]
-position = Vector2(0, 111)
+position = Vector2(0, 47)
 shape = SubResource("RectangleShape2D_d1b6m")
 debug_color = Color(0.589015, 0.377017, 1, 0.42)
 
@@ -88,7 +89,7 @@ animation = &"ui"
 [connection signal="timeout" from="PushTimer" to="." method="_on_push_timer_timeout"]
 [connection signal="area_entered" from="FeedbackArea" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_exited" from="FeedbackArea" to="." method="_on_feedback_area_area_exited"]
-[connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_entered"]
 [connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_entered"]
+[connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_entered"]
 [connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_exited"]
 [connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_exited"]
