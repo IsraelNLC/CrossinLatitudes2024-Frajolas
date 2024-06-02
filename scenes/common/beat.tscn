@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cib13h3wdl8lu"]
+
+[ext_resource type="Script" path="res://beat.gd" id="1_bs7a3"]
+
+[node name="Beat" type="Node"]
+script = ExtResource("1_bs7a3")
+
+[node name="startBeatHitWindow" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="endBeatHitWindow" type="Timer" parent="."]
+one_shot = true
+
+[node name="buttonTimer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[node name="finnishGap" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[connection signal="timeout" from="startBeatHitWindow" to="." method="_on_start_beat_hit_window_timeout"]
+[connection signal="timeout" from="endBeatHitWindow" to="." method="_on_end_beat_hit_window_timeout"]
+[connection signal="timeout" from="buttonTimer" to="." method="_on_button_timer_timeout"]
+[connection signal="timeout" from="finnishGap" to="." method="_on_finnish_gap_timeout"]
