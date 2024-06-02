@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ct811305um12s"]
+[gd_scene load_steps=6 format=3 uid="uid://ct811305um12s"]
 
 [ext_resource type="Script" path="res://scenes/stages/pão_de_queijo.gd" id="1_gw2ym"]
 [ext_resource type="PackedScene" uid="uid://c6cmxp3g6elcu" path="res://scenes/stages/kitchen/pão_de_queijo_ralador.tscn" id="2_fef13"]
 [ext_resource type="PackedScene" uid="uid://5ssl0u2cm6e6" path="res://scenes/stages/kitchen/pão_de_queijo_mistura.tscn" id="2_t4cgp"]
 [ext_resource type="PackedScene" uid="uid://c7vbwbdbf8vww" path="res://scenes/stages/kitchen/pão_de_queijo_enrola.tscn" id="3_265t2"]
+[ext_resource type="PackedScene" uid="uid://fs807pkyme7x" path="res://scenes/stages/hit_game.tscn" id="5_iswyy"]
 
 [node name="PãoDeQueijo" type="Node2D"]
 script = ExtResource("1_gw2ym")
@@ -14,3 +15,6 @@ script = ExtResource("1_gw2ym")
 
 [node name="Cooking2" parent="." instance=ExtResource("2_fef13")]
 position = Vector2(0, 1)
+
+[node name="HitGame" parent="." instance=ExtResource("5_iswyy")]
+position = Vector2(2, -2)
