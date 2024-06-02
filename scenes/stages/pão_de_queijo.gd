@@ -14,20 +14,21 @@ func _ready():
 	#ralador.play_2()
 
 func start_sequence():
-	for i in cenas:
-		if i == 0:
-			ralador.start_animation()
-		elif i == 1:
-			print("animacao1")
-			if await ralador.play_1() == 1:
-				print("finnished")
-		elif i == 2:
-			print("animacao2")
-			if await ralador.play_2() == 2:
-				print("finnished")
-		elif i == 3:
-			misturar.start_animation()
-		elif i == 4:
-			misturar.mix_1()
-		elif i == 5:
-			misturar.mix_2()
+	#for current_beat in cenas:
+	if cenas[current_beat] == 0:
+		ralador.start_animation()
+	elif cenas[current_beat] == 1:
+		print("animacao1")
+		if await ralador.play_1() == 1:
+			print("finnished")
+	elif cenas[current_beat] == 2:
+		print("animacao2")
+		if await ralador.play_2() == 2:
+			print("finnished")
+	elif cenas[current_beat] == 3:
+		misturar.start_animation()
+	elif cenas[current_beat] == 4:
+		misturar.mix_1()
+	elif cenas[current_beat] == 5:
+		misturar.mix_2()
+	current_beat += 1
