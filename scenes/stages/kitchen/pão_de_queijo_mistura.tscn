@@ -126,3 +126,9 @@ position = Vector2(321, 521)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_cavr8")
 animation = &"mixing"
+
+[node name="timerAnim" type="Timer" parent="."]
+one_shot = true
+
+[node name="timerAnim2" type="Timer" parent="."]
+one_shot = true
