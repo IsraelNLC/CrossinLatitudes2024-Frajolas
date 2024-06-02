@@ -32,7 +32,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3a2y8"]
-size = Vector2(198, 74)
+size = Vector2(198, 113)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_523s4"]
 size = Vector2(213.983, 263.034)
@@ -50,7 +50,7 @@ script = ExtResource("2_7hetx")
 [node name="PerfectArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PerfectArea"]
-position = Vector2(0, -134)
+position = Vector2(0, -191.5)
 shape = SubResource("RectangleShape2D_3a2y8")
 
 [node name="GoodArea" type="Area2D" parent="."]
