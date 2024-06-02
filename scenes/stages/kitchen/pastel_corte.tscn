@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://cdir361dj5sg5"]
 
-[ext_resource type="Script" path="res://scenes/stages/kitchen/pão_de_queijo_enrola.gd" id="1_kbp2m"]
+[ext_resource type="Script" path="res://scenes/stages/kitchen/pastel_corte.gd" id="1_6lqyj"]
 [ext_resource type="Texture2D" uid="uid://bk3xqkodjfrbr" path="res://sprites/stages/kitchen/animação pão de queijo/tileset parede cozinha.png" id="2_dfm78"]
 [ext_resource type="Texture2D" uid="uid://dcga4axkeaoq2" path="res://sprites/stages/kitchen/animação pão de queijo/balcão.png" id="3_l31k6"]
 [ext_resource type="Texture2D" uid="uid://cjacrcxlag8f7" path="res://sprites/stages/pastel/put cheese/1.png" id="4_a81mk"]
@@ -114,7 +114,7 @@ animations = [{
 }]
 
 [node name="Cooking" type="Node2D"]
-script = ExtResource("1_kbp2m")
+script = ExtResource("1_6lqyj")
 
 [node name="parede" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qe5yv")
