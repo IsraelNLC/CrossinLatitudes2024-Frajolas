@@ -26,6 +26,11 @@ Globalvars="*res://globalvars.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
