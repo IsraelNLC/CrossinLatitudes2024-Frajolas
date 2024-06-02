@@ -35,7 +35,7 @@ animations = [{
 size = Vector2(198, 74)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_523s4"]
-size = Vector2(213.983, 159.021)
+size = Vector2(213.983, 263.034)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5n6gc"]
 size = Vector2(126, 310)
@@ -56,7 +56,7 @@ shape = SubResource("RectangleShape2D_3a2y8")
 [node name="GoodArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoodArea"]
-position = Vector2(-0.30678, -144.48)
+position = Vector2(-0.417207, -196.486)
 rotation = -0.00212333
 shape = SubResource("RectangleShape2D_523s4")
 debug_color = Color(0, 0.637074, 0.396798, 0.42)
