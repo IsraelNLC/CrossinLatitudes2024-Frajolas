@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct811305um12s"]
+
+[ext_resource type="Script" path="res://scenes/stages/pão_de_queijo.gd" id="1_gw2ym"]
+[ext_resource type="PackedScene" uid="uid://c6cmxp3g6elcu" path="res://scenes/stages/kitchen/pão_de_queijo_ralador.tscn" id="2_fef13"]
+
+[node name="PãoDeQueijo" type="Node2D"]
+script = ExtResource("1_gw2ym")
+
+[node name="Cooking2" parent="." instance=ExtResource("2_fef13")]
+position = Vector2(32, 29)

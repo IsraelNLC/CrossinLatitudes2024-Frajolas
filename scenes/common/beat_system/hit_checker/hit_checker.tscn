@@ -89,5 +89,5 @@ sprite_frames = ExtResource("7_652ao")
 [connection signal="area_exited" from="FeedbackArea" to="." method="_on_feedback_area_area_exited"]
 [connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_entered"]
-[connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_exited"]
 [connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_exited"]
+[connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_exited"]
