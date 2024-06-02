@@ -1,6 +1,7 @@
 extends Node2D
 
-
+@onready var globalvars = $"/root/Globalvars"
+@onready var _animated_sprite = $VéiaAnimada
 @onready var pause_menu = $pause_menu
 
 var pause_state:bool = false
@@ -10,6 +11,9 @@ func _process(delta) -> void:
 		pause()
 	if !pause_state:
 		pause_menu.hide()
+	if (globalvars.lastdialogueover == true):
+		get_tree().change_scene_to_file("res://scenes/stages/cutscenefinal.tscn")
+
 
 func pause():
 	if pause_state:

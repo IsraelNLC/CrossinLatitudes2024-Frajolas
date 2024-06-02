@@ -39,7 +39,7 @@ Laila: Then we add the grated cheese. Mash well, shape into balls and bake.
 Laila: Shall we begin?
 Emil: One second, Grandma!
 Lucas: Go give Grandma a hand, bro! I already put your things away.
-Grandpa Eino: Hi, grandson! Stop being lazy and go help your grandma. 
+Eino: Hi, grandson! Stop being lazy and go help your grandma. 
 
 => END
 
@@ -89,18 +89,22 @@ Emil: It was a really exciting experience.
 Emil: Cooking with friends always makes the process more special.
 Emil: It gets me thinking about college. 
 Emil: Meeting new people and learning from them is one of the best parts of life.
-Emil: In university I could find many opportunities to learn and grow up both in my personal as well as professional life. 
+Emil: In university I could find many opportunities to learn and grow up.
+Emil: Both in my personal as well as professional life. 
 Emil: Who knows, maybe I could even apply to gastronomy? I'm quite good at it.
-Lucas: You're right, coz. College can be a great place to explore new things and discover more about yourself.
+Lucas: You're right, coz. 
+Lucas: College can be a great place to explore new things and discover more about yourself.
 Lucas: And who knows, you could open a Brazilian restaurant in Finland!
 Emil: That's true. I think I can learn a lot and also share what I know.
-Emil: That's what I've realized even during my short stay... the cross-cultural exchange is incredibly valuable.
+Emil: That's what I've realized even during my short stay... 
+Emil: the cross-cultural exchange is incredibly valuable.
 Emil: The more we open ourselves up to new experiences, the more we grow.
 Lucas: I'm glad you're feeling that way, Emil.
 Lucas: It's important to follow your heart and explore new possibilities.
 Lucas: Life is full of unexpected surprises. 
 Lucas: And we'll always be here to support you, Emil. 
 Lucas: Now let's eat, because this looks really delicious!
+set globalvars.lastdialogueover = true
 
 => END 
 
@@ -111,7 +115,8 @@ Emil: But now I feel different. More confident, more at ease.
 Emil: What about you, player? How do you feel about the future? 
 Emil: Sometimes life is much more about living and experiencing than choices. 
 Emil: It's a bit of a cliché what I'm about to say, but...
-Emil: Living the process with people who are important has made me realize that my path is being built at the right time. 
+Emil: Living the process with people who are important has made me realize...
+Emil: ...that my path is being built at the right time. 
 Emil: Now, I prefer to focus on what matters, living moments with people I care about.
 Emil: That way, I'll be prepared to go through any perish in my life.
 Emil: I've learned that change can bring great opportunities. 
@@ -119,10 +124,13 @@ Emil: That new experiences and connections can truly transform us.
 Emil: Every moment, every person we meet, has the potential to teach us something valuable.
 Emil: So remember to enjoy every moment. 
 Emil: Find your happiness in the little things and open yourself up to new possibilities.
-Emil: Because it's through these that we discover hidden parts of ourselves and what we want for our tomorrow.
-Emil:  Well... at least I managed to discover a lot. 
+Emil: Because it's through these that we discover hidden parts of ourselves.
+Emil: And what we want for our tomorrow.
+Emil: Well... at least I managed to discover a lot. 
 Emil: Thank you for following me on this journey.
-Emil:  And may you also find the courage to live fully, here and now. 
-Emil: And if you can, with some company and something to eat.  
+Emil: And may you also find the courage to live fully, here and now. 
+Emil: And if you can, with some company and something to eat.
+
+set globalvars.conclusiondialogueover = true  
 
 => END
