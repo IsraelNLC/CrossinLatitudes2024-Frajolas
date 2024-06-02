@@ -25,6 +25,14 @@ var spawn_6_beat = [0,0]
 var spawn_7_beat = [0,0]
 var spawn_8_beat = [0,0]
 
+var beat_hit = [10, 12, 14, 16, 18, 20, 22, 24, 26, 27, 28, 30, 31, 32, 34, 36, 38, 40, 42, 43, 44, 46, 47, 48, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 79, 80, 82, 83, 84, 86, 88, 90, 92]
+
+var beat_anima = [1, 1, 2, 2, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 1, 1, 2, 2, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 5, 5, 6, 6, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6]
+
+#var beat_tempo = [4, 8, 4, 8, 4, 8, 4, 8, 4, 6, 8, 4, 6, 8, 4, 8, 4, 8, 4, 6, 8, 4, 6, 8, 4, 8, 4, 8, 4, 8, 4, 8, 4, 8, 4, 8, 4, 6, 8, 4, 6, 8, 4, 8, 4, 8, 4, 8]
+var beat_tempo = [3, 7, 3, 7, 3, 7, 5, 7, 3, 5, 7, 3, 5, 7, 3, 7, 3, 7, 3, 5, 7, 3, 5, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 5, 7, 3, 5, 7, 3, 7, 3, 7, 3, 7]
+
+
 var lane = 0
 var rand = 0
 var note = load("res://scenes/common/beat_system/note/note.tscn")
@@ -60,46 +68,41 @@ func _on_conductor_sig_measure(_position):
 
 func _on_conductor_sig_beat(_position):
 	song_position_in_beats = _position
-	if song_position_in_beats >= 8 and song_position_in_beats <= 16:
+	#print('signal beat: ', _position)
+	for beat in beat_anima.size():
+		if song_position_in_beats == beat_hit[beat]:
+			print('beat de spawn nota ', _position)
+			print('beat da action: ', beat_anima[beat])
+			print('beat do tempo: ', beat_tempo[beat])
+
+	if song_position_in_beats >= 8 and song_position_in_beats < 16:
 		spawn_1_beat = [0,0]
-		spawn_2_beat = [1,0]
+		spawn_2_beat = [0,0]
+		spawn_3_beat = [1,0]
+		spawn_4_beat = [0,0]
+		spawn_5_beat = [0,0]
+		spawn_6_beat = [0,0]
+		spawn_7_beat = [1,0]
+		spawn_8_beat = [0,0]
+	if song_position_in_beats >= 16 and song_position_in_beats < 24:
+		spawn_1_beat = [0,0]
+		spawn_2_beat = [0,0]
+		spawn_3_beat = [1,0]
+		spawn_4_beat = [0,0]
+		spawn_5_beat = [0,0]
+		spawn_6_beat = [0,0]
+		spawn_7_beat = [1,1]
+		spawn_8_beat = [0,0]
+	else:
+		spawn_1_beat = [0,0]
+		spawn_2_beat = [0,0]
 		spawn_3_beat = [0,0]
 		spawn_4_beat = [0,0]
 		spawn_5_beat = [0,0]
-		spawn_6_beat = [3,0]
+		spawn_6_beat = [0,0]
 		spawn_7_beat = [0,0]
 		spawn_8_beat = [0,0]
-	#if song_position_in_beats > 36:
-		##print('beat 1 start')
-		#spawn_1_beat = [0,0]
-		#spawn_2_beat = [1,0]
-		#spawn_3_beat = [0,0]
-		#spawn_4_beat = [0,0]
-		#spawn_5_beat = [0,0]
-		#spawn_6_beat = [1,0]
-		#spawn_7_beat = [0,0]
-		#spawn_8_beat = [0,0]
-	#if song_position_in_beats > 98:
-		##print('beat 2 start')
-		#spawn_1_beat = 0
-		#spawn_2_beat = 0
-		#spawn_3_beat = 0
-		#spawn_4_beat = 0
-	#if song_position_in_beats > 132:
-		#spawn_1_beat = 0
-		#spawn_2_beat = 0
-		#spawn_3_beat = 0
-		#spawn_4_beat = 0
-	#if song_position_in_beats > 162:
-		#spawn_1_beat = 0
-		#spawn_2_beat = 0
-		#spawn_3_beat = 0
-		#spawn_4_beat = 0
-	#if song_position_in_beats > 194:
-		#spawn_1_beat = 0
-		#spawn_2_beat = 0
-		#spawn_3_beat = 0
-		#spawn_4_beat = 0
+	
 	if song_position_in_beats > 200:
 		print('Fim da Musica')
 		#Global.set_score(score)
@@ -123,6 +126,8 @@ func _spawn_notes(to_spawn):
 		instance = note.instantiate()
 		instance.initialize(lane)
 		add_child(instance)
+	if to_spawn[0] == 0:
+		print('sem notas to spawn')
 
 #func increment_score(by):
 	#if by > 0:
