@@ -8,9 +8,9 @@ extends Node2D
 @onready var main = $"../"
 
 func start_animation():
-	main.enrolar.visible = false
+	main.enrolar.visible = true
 	main.ralador.visible = false
-	main.misturar.visible = true
+	main.misturar.visible = false
 
 
 

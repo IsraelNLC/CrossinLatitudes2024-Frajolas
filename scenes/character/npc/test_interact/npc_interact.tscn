@@ -11,7 +11,7 @@ height = 186.0
 script = ExtResource("1_l4wsy")
 
 [node name="InteractionArea" parent="." instance=ExtResource("3_6igoo")]
-action_name = "Talk"
+action_name = " Talk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 shape = SubResource("CapsuleShape2D_l74vl")
