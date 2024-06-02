@@ -39,7 +39,8 @@ Laila: Then we add the grated cheese. Mash well, shape into balls and bake.
 Laila: Shall we begin?
 Emil: One second, Grandma!
 Lucas: Go give Grandma a hand, bro! I already put your things away.
-Eino: Hi, grandson! Stop being lazy and go help your grandma. 
+Eino: Hi, grandson! Stop being lazy and go help your grandma.
+set globalvars.paodequeijo = true
 
 => END
 
@@ -63,7 +64,7 @@ Emil: I'd like to give something back.
 Emil: I'm going to teach Lucas how to make karjalanpiirakka, a typical Finnish dish.
 Laila: That's lovely, Emil! I'm sure he'll appreciate it. 
 Laila: It's a great way to share a bit of your culture with him.
-
+set globalvars.lastdialogueover = true
 => END 
 
 ~ dialogo_antes_do_nivel_2

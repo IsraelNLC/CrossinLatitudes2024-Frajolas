@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://6j87s0ujrjas" path="res://sprites/character/lailaidle/2.png" id="7_nekni"]
 [ext_resource type="Texture2D" uid="uid://irpd3ysawybe" path="res://sprites/character/1.png" id="8_p2jny"]
 [ext_resource type="Texture2D" uid="uid://jvu2qwx2sdwj" path="res://sprites/character/2.png" id="9_v64ig"]
-[ext_resource type="PackedScene" path="res://scenes/menu/pause_menu.tscn" id="10_qv6je"]
+[ext_resource type="PackedScene" uid="uid://bjhepvxgfskyo" path="res://scenes/menu/pause_menu.tscn" id="10_qv6je"]
 [ext_resource type="Texture2D" uid="uid://citxc0x0640b4" path="res://sprites/stages/home/cadeira-frente.png" id="11_0heof"]
 [ext_resource type="Texture2D" uid="uid://bdndckolga8km" path="res://sprites/stages/home/mesa.png" id="12_wm7xf"]
 [ext_resource type="PackedScene" uid="uid://1u5u7ny8yn7y" path="res://scenes/character/player/player.tscn" id="13_jc4kh"]
@@ -178,4 +178,3 @@ shape = SubResource("RectangleShape2D_kroc5")
 
 [node name="Player" parent="." instance=ExtResource("13_jc4kh")]
 position = Vector2(37, -10)
-scale = Vector2(1, 1)
