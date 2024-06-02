@@ -194,7 +194,7 @@ func _on_conductor_sig_beat(_position):
 		spawn_8_beat = [0,0]
 
 	
-	if song_position_in_beats > 200:
+	if song_position_in_beats > 100:
 		print('Fim da Musica')
 		#Global.set_score(score)
 		#Global.combo = max_combo
@@ -202,7 +202,7 @@ func _on_conductor_sig_beat(_position):
 		#Global.good = good
 		#Global.okay = okay
 		#Global.missed = missed
-		if get_tree().change_scene_to_file("res://scenes/stages/home.tscn") != OK:
+		if get_tree().change_scene_to_file("res://scenes/stages/homeDEPOISDOPAODEQUEIJO.tscn") != OK:
 			print ("Error changing scene to End")
 
 func _spawn_notes(to_spawn):

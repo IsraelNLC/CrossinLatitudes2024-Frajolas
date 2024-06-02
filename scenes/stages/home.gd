@@ -11,8 +11,12 @@ func _process(delta) -> void:
 		pause()
 	if !pause_state:
 		pause_menu.hide()
+	if globalvars.pastel:
+		get_tree().change_scene_to_file("res://scenes/stages/kitchen/pastel_corte.tscn")
+		globalvars.pastel = false
 	if (globalvars.paodequeijo == true):
 		get_tree().change_scene_to_file("res://scenes/stages/pão_de_queijo.tscn")
+		globalvars.paodequeijo = false
 	if (globalvars.lastdialogueover == true):
 		get_tree().change_scene_to_file("res://scenes/stages/cutscenefinal.tscn")
 

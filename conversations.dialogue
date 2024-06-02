@@ -64,7 +64,6 @@ Emil: I'd like to give something back.
 Emil: I'm going to teach Lucas how to make karjalanpiirakka, a typical Finnish dish.
 Laila: That's lovely, Emil! I'm sure he'll appreciate it. 
 Laila: It's a great way to share a bit of your culture with him.
-set globalvars.lastdialogueover = true
 => END 
 
 ~ dialogo_antes_do_nivel_2
@@ -79,6 +78,7 @@ Emil: Karjalanpiirakka. These are typical Finnish rice cakes.
 Emil: The recipe is simple: we make a thin rye dough, fill it with a creamy rice porridge and bake it.
 Emil: It's traditional and delicious.
 Lucas: Wow, that sounds great! Come on, buddy. Show me the way.
+set globalvars.pastel = true
 
 => END 
 
