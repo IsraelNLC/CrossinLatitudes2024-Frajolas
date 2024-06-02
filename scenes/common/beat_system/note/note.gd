@@ -29,10 +29,10 @@ func initialize(lane):
 	if lane == 0:
 		$AnimatedSprite2D.frame = 0
 		position = LEFT_LANE_SPAWN
-	elif lane == 1:
+	elif lane == 2:
 		$AnimatedSprite2D.frame = 4
 		position = CENTRE_LANE_SPAWN
-	elif lane == 2:
+	elif lane == 1:
 		$AnimatedSprite2D.frame = 2
 		position = RIGHT_LANE_SPAWN
 	else:

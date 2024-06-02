@@ -27,6 +27,7 @@ var notes_in_feedback = 0
 var input := 'interact1'
 
 func _ready():
+	animation = 'ui'
 	match input_type:
 		INPUT.INPUT01:
 			frame = 0
@@ -91,6 +92,9 @@ func _on_good_area_area_entered(area):
 	if area.is_in_group("note"):
 		good = true
 		current_note = area
+		
+		feedback_state = FEEDBACK_STATE.HIT
+		feedback_change()
 
 func _on_good_area_area_exited(area):
 	if area.is_in_group("note"):
@@ -116,16 +120,16 @@ func _on_feedback_area_area_entered(area):
 	if area.is_in_group("note"):
 		feedback_state = FEEDBACK_STATE.PREV_HIT
 		
-		print('Feedback 1 Ativado')
+		#print('Feedback 1 Ativado')
 		notes_in_feedback += 1
 		feedback_change()
 
 
 func _on_feedback_area_area_exited(area):
 	if area.is_in_group("note"):
-		feedback_state = FEEDBACK_STATE.HIT
+		#feedback_state = FEEDBACK_STATE.HIT
 		#feedback_change(feedback_state)
-		print('Feedback 2 Ativado')
+		#print('Feedback 2 Ativado')
 		feedback_change()
 
 
@@ -133,7 +137,7 @@ func _on_feedback_area_area_exited(area):
 func _on_feedback_area_end_area_entered(area):
 	if area.is_in_group('note'):
 		feedback_state = FEEDBACK_STATE.NULL
-		print('feedback destroy')
+		#print('feedback destroy')
 		notes_in_feedback -= 1
 		feedback_change()
 
