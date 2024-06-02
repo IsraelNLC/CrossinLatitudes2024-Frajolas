@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://bo7fwdel4t0o5"]
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://bo7fwdel4t0o5"]
 
 [ext_resource type="Texture2D" uid="uid://b52ddvx6j5mkh" path="res://sprites/stages/beat-system/notes-placeholder/input01-default.png" id="1_v2wtq"]
 [ext_resource type="Texture2D" uid="uid://dvma1fdylaque" path="res://sprites/stages/beat-system/notes-placeholder/input01-hit.png" id="2_f8ied"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://be15rwwohijp0" path="res://sprites/stages/beat-system/notes-placeholder/input02-hit.png" id="4_ymjbh"]
 [ext_resource type="Texture2D" uid="uid://bsymae630mivl" path="res://sprites/stages/beat-system/notes-placeholder/input03-default.png" id="5_05y61"]
 [ext_resource type="Texture2D" uid="uid://c3j872swwnrek" path="res://sprites/stages/beat-system/notes-placeholder/input03-hit.png" id="6_p2g5a"]
+[ext_resource type="Texture2D" uid="uid://d0g55dr26rib2" path="res://sprites/ui/beat/j_light.png" id="7_c6p6j"]
+[ext_resource type="Texture2D" uid="uid://b7w4o2yvd27av" path="res://sprites/ui/beat/k_light.png" id="8_s6ku4"]
+[ext_resource type="Texture2D" uid="uid://dcc0g877i2plv" path="res://sprites/ui/beat/JK-input.png" id="9_ccq11"]
 
 [resource]
 animations = [{
@@ -30,5 +33,28 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_c6p6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c6p6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_s6ku4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_s6ku4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ccq11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ccq11")
+}],
+"loop": true,
+"name": &"ui",
 "speed": 5.0
 }]

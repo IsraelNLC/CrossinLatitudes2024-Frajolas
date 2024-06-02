@@ -27,6 +27,7 @@ var notes_in_feedback = 0
 var input := 'interact1'
 
 func _ready():
+	animation = 'ui'
 	match input_type:
 		INPUT.INPUT01:
 			frame = 0

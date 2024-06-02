@@ -79,6 +79,7 @@ debug_color = Color(0.589015, 0.377017, 1, 0.42)
 [node name="FeedbackInput" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -328)
 sprite_frames = ExtResource("7_652ao")
+animation = &"ui"
 
 [connection signal="area_entered" from="PerfectArea" to="." method="_on_perfect_area_area_entered"]
 [connection signal="area_exited" from="PerfectArea" to="." method="_on_perfect_area_area_exited"]
@@ -87,7 +88,7 @@ sprite_frames = ExtResource("7_652ao")
 [connection signal="timeout" from="PushTimer" to="." method="_on_push_timer_timeout"]
 [connection signal="area_entered" from="FeedbackArea" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_exited" from="FeedbackArea" to="." method="_on_feedback_area_area_exited"]
-[connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_entered"]
-[connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_exited"]
+[connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_exited"]
+[connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_exited"]
