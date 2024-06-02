@@ -5,7 +5,7 @@ extends Control
 @onready var returnButton = $Return
 @onready var VboxCredits = $VBOXCredits
 func _on_play_pressed():
-	get_tree().change_scene_to_file('res://scenes/stages/home.tscn')
+	get_tree().change_scene_to_file("res://scenes/cutsceneinicial.tscn")
 
 
 func _on_options_pressed():

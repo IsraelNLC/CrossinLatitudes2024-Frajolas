@@ -1,27 +1,27 @@
-[gd_scene load_steps=20 format=3 uid="uid://dbndwl2q8gn10"]
+[gd_scene load_steps=20 format=3 uid="uid://dqd7fg8x3fagg"]
 
-[ext_resource type="PackedScene" uid="uid://1u5u7ny8yn7y" path="res://scenes/character/player/player.tscn" id="1_j4nvx"]
-[ext_resource type="Script" path="res://scenes/stages/home.gd" id="1_jw2bl"]
-[ext_resource type="Texture2D" uid="uid://dnpenvau1n1qn" path="res://sprites/character/eino/1.png" id="3_ma6my"]
-[ext_resource type="Texture2D" uid="uid://cwfwx0xso5jqi" path="res://sprites/stages/cenário .jpg" id="3_sint6"]
-[ext_resource type="PackedScene" path="res://scenes/menu/pause_menu.tscn" id="4_8h20p"]
-[ext_resource type="Texture2D" uid="uid://27mvg1bmktlw" path="res://sprites/character/eino/2.png" id="4_c43ng"]
-[ext_resource type="PackedScene" uid="uid://g1cuagmquxn7" path="res://scenes/character/npc/test_interact/npc_interact.tscn" id="4_q8lp3"]
-[ext_resource type="Texture2D" uid="uid://citxc0x0640b4" path="res://sprites/stages/home/cadeira-frente.png" id="7_7yeyo"]
-[ext_resource type="Texture2D" uid="uid://bdndckolga8km" path="res://sprites/stages/home/mesa.png" id="8_2rqtp"]
-[ext_resource type="Texture2D" uid="uid://irpd3ysawybe" path="res://sprites/character/1.png" id="8_iefo2"]
-[ext_resource type="Texture2D" uid="uid://cxiuysc5boqlk" path="res://sprites/character/lailaidle/1.png" id="8_uh38k"]
-[ext_resource type="Texture2D" uid="uid://jvu2qwx2sdwj" path="res://sprites/character/2.png" id="9_sxvvs"]
-[ext_resource type="Texture2D" uid="uid://6j87s0ujrjas" path="res://sprites/character/lailaidle/2.png" id="9_x2o6i"]
+[ext_resource type="Script" path="res://scenes/stages/home.gd" id="1_0xifk"]
+[ext_resource type="Texture2D" uid="uid://cwfwx0xso5jqi" path="res://sprites/stages/cenário .jpg" id="2_g4f0j"]
+[ext_resource type="Texture2D" uid="uid://dnpenvau1n1qn" path="res://sprites/character/eino/1.png" id="3_ybx0n"]
+[ext_resource type="Texture2D" uid="uid://27mvg1bmktlw" path="res://sprites/character/eino/2.png" id="4_7wyu0"]
+[ext_resource type="Texture2D" uid="uid://cxiuysc5boqlk" path="res://sprites/character/lailaidle/1.png" id="5_ibsos"]
+[ext_resource type="Texture2D" uid="uid://6j87s0ujrjas" path="res://sprites/character/lailaidle/2.png" id="6_p7d8c"]
+[ext_resource type="PackedScene" uid="uid://g1cuagmquxn7" path="res://scenes/character/npc/test_interact/npc_interact.tscn" id="7_e3pg4"]
+[ext_resource type="Texture2D" uid="uid://irpd3ysawybe" path="res://sprites/character/1.png" id="8_yh3db"]
+[ext_resource type="Texture2D" uid="uid://jvu2qwx2sdwj" path="res://sprites/character/2.png" id="9_8ic00"]
+[ext_resource type="PackedScene" path="res://scenes/menu/pause_menu.tscn" id="10_4lprk"]
+[ext_resource type="Texture2D" uid="uid://citxc0x0640b4" path="res://sprites/stages/home/cadeira-frente.png" id="11_8qoy4"]
+[ext_resource type="Texture2D" uid="uid://bdndckolga8km" path="res://sprites/stages/home/mesa.png" id="12_ly8j1"]
+[ext_resource type="PackedScene" uid="uid://1u5u7ny8yn7y" path="res://scenes/character/player/player.tscn" id="13_fc20o"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cjv8a"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_ma6my")
+"texture": ExtResource("3_ybx0n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_c43ng")
+"texture": ExtResource("4_7wyu0")
 }],
 "loop": true,
 "name": &"default",
@@ -33,10 +33,10 @@ resource_local_to_scene = true
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_uh38k")
+"texture": ExtResource("5_ibsos")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_x2o6i")
+"texture": ExtResource("6_p7d8c")
 }],
 "loop": true,
 "name": &"default",
@@ -47,10 +47,10 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_iefo2")
+"texture": ExtResource("8_yh3db")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_sxvvs")
+"texture": ExtResource("9_8ic00")
 }],
 "loop": true,
 "name": &"default",
@@ -67,37 +67,34 @@ size = Vector2(190, 604)
 size = Vector2(257.143, 67.2811)
 
 [node name="world" type="Node2D"]
-script = ExtResource("1_jw2bl")
+script = ExtResource("1_0xifk")
 
 [node name="Cenário" type="Sprite2D" parent="."]
 position = Vector2(-206, -119)
 scale = Vector2(0.541667, 0.541667)
-texture = ExtResource("3_sint6")
+texture = ExtResource("2_g4f0j")
 
 [node name="VéioAnimado" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-59, -47)
+position = Vector2(54, -116)
 sprite_frames = SubResource("SpriteFrames_cjv8a")
 speed_scale = 0.5
 
-[node name="NpcInteractVéia" parent="." instance=ExtResource("4_q8lp3")]
-position = Vector2(-274, -43)
-selectedindex = 1
-
-[node name="VéiaAnimada" type="AnimatedSprite2D" parent="NpcInteractVéia"]
+[node name="VéiaAnimada" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-4, -4)
+position = Vector2(-52, -47)
 sprite_frames = SubResource("SpriteFrames_oihg1")
 frame_progress = 0.571217
 speed_scale = 0.5
 
-[node name="NpcInteractLucas" parent="." instance=ExtResource("4_q8lp3")]
-position = Vector2(59, -127)
+[node name="NpcInteractLucas" parent="." instance=ExtResource("7_e3pg4")]
+position = Vector2(-285, -47)
+selectedindex = 4
 
 [node name="LucasAnimado" type="AnimatedSprite2D" parent="NpcInteractLucas"]
 sprite_frames = SubResource("SpriteFrames_tb34p")
 
-[node name="pause_menu" parent="." instance=ExtResource("4_8h20p")]
+[node name="pause_menu" parent="." instance=ExtResource("10_4lprk")]
 offset_left = -33.0
 offset_top = -41.0
 offset_right = 42.0
@@ -126,11 +123,11 @@ shape = SubResource("RectangleShape2D_iv2ry")
 
 [node name="Cadeira-frente" type="Sprite2D" parent="."]
 position = Vector2(-191, -69)
-texture = ExtResource("7_7yeyo")
+texture = ExtResource("11_8qoy4")
 
 [node name="Cadeira-frente2" type="Sprite2D" parent="."]
 position = Vector2(-135, -69)
-texture = ExtResource("7_7yeyo")
+texture = ExtResource("11_8qoy4")
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="."]
 position = Vector2(-394, 399)
@@ -155,7 +152,7 @@ shape = SubResource("RectangleShape2D_1fg2i")
 [node name="Mesa" type="Sprite2D" parent="."]
 position = Vector2(-169, -12)
 scale = Vector2(1.085, 1.085)
-texture = ExtResource("8_2rqtp")
+texture = ExtResource("12_ly8j1")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="Mesa"]
 mass = 1000.0
@@ -166,6 +163,6 @@ position = Vector2(-0.4608, -14.2857)
 scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_kroc5")
 
-[node name="Player" parent="." instance=ExtResource("1_j4nvx")]
+[node name="Player" parent="." instance=ExtResource("13_fc20o")]
 position = Vector2(37, -10)
 scale = Vector2(1, 1)

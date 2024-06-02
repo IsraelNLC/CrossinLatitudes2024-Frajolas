@@ -5,8 +5,12 @@ extends Node2D
 @export var selectedindex = 0
 
 @export var lines: Array[String] = [
-	"this_is_a_node_title",
-	"this_is_another_title",
+	"lucas_reception",
+	"dialogo_antes_do_nivel_1",
+	"dialogo_depois_do_nivel_1",
+	"dialogo_antes_do_nivel_2",
+	"dialogo_depois_do_nivel_2",
+	"dialogo_conclusao"
 ]
 
 @onready var interaction_area = $InteractionArea
@@ -17,4 +21,4 @@ func _ready():
 
 func _interact():
 	print('interact successful')
-	DialogueManager.show_example_dialogue_balloon(load("res://example.dialogue"), lines[selectedindex])
+	DialogueManager.show_example_dialogue_balloon(load("res://conversations.dialogue"), lines[selectedindex])
