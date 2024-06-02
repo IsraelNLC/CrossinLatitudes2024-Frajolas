@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbrrf6oj0bese"]
+
+[ext_resource type="Script" path="res://scenes/common/beat_system/conductor/conductor.gd" id="1_f42li"]
+
+[node name="Conductor" type="AudioStreamPlayer"]
+script = ExtResource("1_f42li")
+
+[node name="StartTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

@@ -26,7 +26,7 @@ func _ready():
 	if continuous == true:
 		endHitWindow.wait_time = duration - 0.3
 		endHitWindow.start()
-	print("DURACAO: ",key,"'", start,"'", end,"'", duration,"'", continuous)
+	print("DURACAO: \n key: ",key,"' \n start: ", start,"' \n end: ", end,"' \n duration: ", duration,"' \n continuos:", continuous)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

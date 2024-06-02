@@ -1,6 +1,7 @@
 extends Node2D
 
 var currentBeatIndex = 0
+#[init_time_window, end_time_window, continuos]
 var beatTimes = [[0.8,0.8,1],[1.6,1.6,1],[2.5,3.0,2],[3.5,3.5,1],[4.5,4.5,1],[5.4,6.4,2]]
 
 @onready var beat = preload("res://scenes/common/beat.tscn")
