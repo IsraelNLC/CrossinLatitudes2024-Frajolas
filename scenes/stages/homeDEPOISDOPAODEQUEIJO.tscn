@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://6j87s0ujrjas" path="res://sprites/character/lailaidle/2.png" id="7_u1k6y"]
 [ext_resource type="Texture2D" uid="uid://irpd3ysawybe" path="res://sprites/character/1.png" id="8_7cckg"]
 [ext_resource type="Texture2D" uid="uid://jvu2qwx2sdwj" path="res://sprites/character/2.png" id="9_af0cj"]
-[ext_resource type="PackedScene" path="res://scenes/menu/pause_menu.tscn" id="10_vfsah"]
+[ext_resource type="PackedScene" uid="uid://bjhepvxgfskyo" path="res://scenes/menu/pause_menu.tscn" id="10_vfsah"]
 [ext_resource type="Texture2D" uid="uid://citxc0x0640b4" path="res://sprites/stages/home/cadeira-frente.png" id="11_lefer"]
 [ext_resource type="Texture2D" uid="uid://bdndckolga8km" path="res://sprites/stages/home/mesa.png" id="12_ipih3"]
 [ext_resource type="PackedScene" uid="uid://1u5u7ny8yn7y" path="res://scenes/character/player/player.tscn" id="13_anohb"]
@@ -159,10 +159,6 @@ rotation = 0.785398
 mass = 1000.0
 gravity_scale = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D5"]
-position = Vector2(-599, -187)
-shape = SubResource("RectangleShape2D_1fg2i")
-
 [node name="Mesa" type="Sprite2D" parent="."]
 position = Vector2(-169, -12)
 scale = Vector2(1.085, 1.085)
@@ -179,4 +175,3 @@ shape = SubResource("RectangleShape2D_kroc5")
 
 [node name="Player" parent="." instance=ExtResource("13_anohb")]
 position = Vector2(37, -10)
-scale = Vector2(1, 1)

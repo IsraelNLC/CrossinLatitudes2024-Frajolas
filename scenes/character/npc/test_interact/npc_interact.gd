@@ -15,10 +15,14 @@ extends Node2D
 
 @onready var interaction_area = $InteractionArea
 @onready var sprite = $Sprite2D
+var interected = false
 
 func _ready():
+	
 	interaction_area.interact = Callable(self, '_interact')
 
 func _interact():
-	print('interact successful')
-	DialogueManager.show_example_dialogue_balloon(load("res://conversations.dialogue"), lines[selectedindex])
+	if !interected:
+		print('interact successful')
+		DialogueManager.show_example_dialogue_balloon(load("res://conversations.dialogue"), lines[selectedindex])
+		interected = true
