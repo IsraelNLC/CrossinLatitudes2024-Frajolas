@@ -48,7 +48,7 @@ func _on_conductor_sig_measure(_position):
 
 func _on_conductor_sig_beat(_position):
 	song_position_in_beats = _position
-	print(_position)
+	#print(_position)
 	if song_position_in_beats > 36:
 		print('beat 1 start')
 		spawn_1_beat = 0

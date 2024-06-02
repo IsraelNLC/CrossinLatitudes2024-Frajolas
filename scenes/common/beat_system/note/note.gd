@@ -1,7 +1,7 @@
 extends Area2D
 
 const TARGET_Y = 600
-const SPAWN_Y = -16
+const SPAWN_Y = 0
 const DIST_TO_TARGET = TARGET_Y - SPAWN_Y
 
 const LEFT_LANE_SPAWN = Vector2(200, SPAWN_Y)

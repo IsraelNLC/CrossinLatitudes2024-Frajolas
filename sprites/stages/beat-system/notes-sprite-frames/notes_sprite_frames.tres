@@ -11,22 +11,22 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_v2wtq")
-}, {
-"duration": 1.0,
 "texture": ExtResource("2_f8ied")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_fkmwv")
+"texture": ExtResource("1_v2wtq")
 }, {
 "duration": 1.0,
 "texture": ExtResource("4_ymjbh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_05y61")
+"texture": ExtResource("3_fkmwv")
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_p2g5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_05y61")
 }],
 "loop": true,
 "name": &"default",

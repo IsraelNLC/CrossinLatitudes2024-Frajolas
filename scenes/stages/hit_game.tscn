@@ -9,8 +9,15 @@
 script = ExtResource("1_a8e5k")
 
 [node name="HitChecker" parent="." instance=ExtResource("1_ee7ad")]
-position = Vector2(541, 588)
-input = "interact1"
+position = Vector2(217, 588)
+
+[node name="HitChecker2" parent="." instance=ExtResource("1_ee7ad")]
+position = Vector2(548, 588)
+input_type = 2
+
+[node name="HitChecker3" parent="." instance=ExtResource("1_ee7ad")]
+position = Vector2(938, 588)
+input_type = 1
 
 [node name="Conductor" parent="." instance=ExtResource("2_8claq")]
 stream = ExtResource("4_nex6w")
