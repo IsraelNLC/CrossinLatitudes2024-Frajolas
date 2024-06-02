@@ -2,10 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://1u5u7ny8yn7y" path="res://scenes/character/player/player.tscn" id="1_j4nvx"]
 [ext_resource type="Script" path="res://scenes/stages/home.gd" id="1_jw2bl"]
-[ext_resource type="Texture2D" uid="uid://8s468ynk6vik" path="res://sprites/stages/teste_home.jpg" id="1_qrvhw"]
 [ext_resource type="Texture2D" uid="uid://dnpenvau1n1qn" path="res://sprites/character/eino/1.png" id="3_ma6my"]
 [ext_resource type="Texture2D" uid="uid://cwfwx0xso5jqi" path="res://sprites/stages/cenário .jpg" id="3_sint6"]
-[ext_resource type="PackedScene" path="res://scenes/menu/pause_menu.tscn" id="4_8h20p"]
+[ext_resource type="PackedScene" uid="uid://bjhepvxgfskyo" path="res://scenes/menu/pause_menu.tscn" id="4_8h20p"]
 [ext_resource type="Texture2D" uid="uid://27mvg1bmktlw" path="res://sprites/character/eino/2.png" id="4_c43ng"]
 [ext_resource type="PackedScene" uid="uid://g1cuagmquxn7" path="res://scenes/character/npc/test_interact/npc_interact.tscn" id="4_q8lp3"]
 [ext_resource type="Texture2D" uid="uid://citxc0x0640b4" path="res://sprites/stages/home/cadeira-frente.png" id="7_7yeyo"]
@@ -169,4 +168,3 @@ shape = SubResource("RectangleShape2D_kroc5")
 
 [node name="Player" parent="." instance=ExtResource("1_j4nvx")]
 position = Vector2(37, -10)
-scale = Vector2(1, 1)

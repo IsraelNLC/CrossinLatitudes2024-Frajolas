@@ -5,8 +5,15 @@ extends Node2D
 @onready var tigela1 = $tigela_npc
 @onready var tigela2 = $tigela_player
 
+@onready var main = $"../"
+
 var played1 = false
 var played2 = false
+
+func start_animation():
+	main.enrolar.visible = false
+	main.misturar.visible = false
+	main.ralador.visible = true
 
 func play_1():
 	if  played1:

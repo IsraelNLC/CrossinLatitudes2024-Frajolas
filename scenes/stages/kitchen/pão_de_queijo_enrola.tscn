@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://c7vbwbdbf8vww"]
+[gd_scene load_steps=19 format=3 uid="uid://c7vbwbdbf8vww"]
 
 [ext_resource type="Texture2D" uid="uid://bk3xqkodjfrbr" path="res://sprites/stages/kitchen/animação pão de queijo/tileset parede cozinha.png" id="1_aiecx"]
+[ext_resource type="Script" path="res://scenes/stages/kitchen/pão_de_queijo_enrola.gd" id="1_avth0"]
 [ext_resource type="Texture2D" uid="uid://dcga4axkeaoq2" path="res://sprites/stages/kitchen/animação pão de queijo/balcão.png" id="2_hl8jw"]
 [ext_resource type="Texture2D" uid="uid://pjyf3uxia1au" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo assado.png" id="3_e5c4w"]
 [ext_resource type="Texture2D" uid="uid://ctnixvqnwoc2w" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo-01.png" id="4_drffk"]
@@ -43,7 +44,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v10h8"]
@@ -55,7 +56,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_jhv8g")
 }],
-"loop": true,
+"loop": false,
 "name": &"holding",
 "speed": 5.0
 }]
@@ -69,12 +70,13 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_s3wx4")
 }],
-"loop": true,
+"loop": false,
 "name": &"holding",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [node name="Cooking" type="Node2D"]
+script = ExtResource("1_avth0")
 
 [node name="parede" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qe5yv")
@@ -92,7 +94,7 @@ position = Vector2(447, 643)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_y5ebv")
 frame = 3
-frame_progress = 0.0511657
+frame_progress = 0.488495
 
 [node name="massa_player" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -115,3 +117,5 @@ position = Vector2(365, 640)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_cavr8")
 animation = &"holding"
+frame = 1
+frame_progress = 1.0

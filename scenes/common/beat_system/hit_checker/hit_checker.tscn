@@ -89,7 +89,7 @@ animation = &"ui"
 [connection signal="timeout" from="PushTimer" to="." method="_on_push_timer_timeout"]
 [connection signal="area_entered" from="FeedbackArea" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_exited" from="FeedbackArea" to="." method="_on_feedback_area_area_exited"]
-[connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_entered"]
+[connection signal="area_entered" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_entered"]
 [connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_area_exited"]
 [connection signal="area_exited" from="FeedbackAreaEnd" to="." method="_on_feedback_area_end_area_exited"]

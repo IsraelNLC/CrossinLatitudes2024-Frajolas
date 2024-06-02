@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://5ssl0u2cm6e6"]
+[gd_scene load_steps=19 format=3 uid="uid://5ssl0u2cm6e6"]
 
+[ext_resource type="Script" path="res://scenes/stages/kitchen/pão_de_queijo_mistura.gd" id="1_ha63y"]
 [ext_resource type="Texture2D" uid="uid://bk3xqkodjfrbr" path="res://sprites/stages/kitchen/animação pão de queijo/tileset parede cozinha.png" id="1_tbhtw"]
 [ext_resource type="Texture2D" uid="uid://dcga4axkeaoq2" path="res://sprites/stages/kitchen/animação pão de queijo/balcão.png" id="2_3um64"]
 [ext_resource type="Texture2D" uid="uid://di4dhryv40l5k" path="res://sprites/stages/kitchen/animação pão de queijo/misturando a massa/misturando1.png" id="3_akbsu"]
@@ -88,6 +89,7 @@ animations = [{
 }]
 
 [node name="Cooking" type="Node2D"]
+script = ExtResource("1_ha63y")
 
 [node name="parede" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qe5yv")
@@ -113,15 +115,14 @@ sprite_frames = SubResource("SpriteFrames_we31w")
 
 [node name="hand_player" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(841, 642)
+position = Vector2(931, 521)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_v10h8")
-animation = &"idle"
+animation = &"mixing"
 
 [node name="hand_npc" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(193, 642)
+position = Vector2(321, 521)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_cavr8")
-animation = &"idle"
-autoplay = "idle"
+animation = &"mixing"
