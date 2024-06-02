@@ -1,6 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://1u5u7ny8yn7y"]
+[gd_scene load_steps=14 format=3 uid="uid://1u5u7ny8yn7y"]
 
-[ext_resource type="Texture2D" uid="uid://cl7ecp80mvwko" path="res://icon.svg" id="1_yt4kw"]
+[ext_resource type="Texture2D" uid="uid://c8qp70ittven0" path="res://sprites/character/emil/idle/emilidle1.png" id="1_j5r7r"]
+[ext_resource type="Texture2D" uid="uid://bvwua3t8mm1sv" path="res://sprites/character/emil/idle/emilidle2.png" id="2_qc5lk"]
+[ext_resource type="Texture2D" uid="uid://bcgfopvln1d6c" path="res://sprites/character/emil/walk/emilwalk1.png" id="3_y1vwt"]
+[ext_resource type="Texture2D" uid="uid://dtanmd15dfpnx" path="res://sprites/character/emil/walk/emilwalk2.png" id="4_d7bnj"]
+[ext_resource type="Texture2D" uid="uid://ktm0bgr14e6k" path="res://sprites/character/emil/walk/emilwalk3.png" id="5_o2308"]
+[ext_resource type="Texture2D" uid="uid://colw1pjahsf7t" path="res://sprites/character/emil/walk/emilwalk4.png" id="6_c8fvi"]
+[ext_resource type="Texture2D" uid="uid://cimqb0kseloyh" path="res://sprites/character/emil/walk/emilwalk5.png" id="7_hbixj"]
+[ext_resource type="Texture2D" uid="uid://rpyq120k3xjx" path="res://sprites/character/emil/walk/emilwalk6.png" id="8_rxvg6"]
+[ext_resource type="Texture2D" uid="uid://dgxlo7bcvm1nk" path="res://sprites/character/emil/walk/emilwalk7.png" id="9_g43vl"]
+[ext_resource type="Texture2D" uid="uid://idqluh2m5q20" path="res://sprites/character/emil/walk/emilwalk8.png" id="10_omly5"]
 
 [sub_resource type="GDScript" id="GDScript_cgcdf"]
 script/source = "extends CharacterBody2D
@@ -10,13 +19,27 @@ script/source = "extends CharacterBody2D
 
 @onready var anim_sprite: AnimatedSprite2D = $AnimatedSprite2D as AnimatedSprite2D
 
+var is_walking:bool = false
+
 
 
 func _physics_process(delta: float) -> void:
 	var direction: Vector2 = Input.get_vector('mov_left', 'move_right', 'mov_up', 'mov_down')
 	
+	is_walking = !direction.is_zero_approx()
+	
+	if is_walking:
+		anim_sprite.play(\"walk\")
+	else:
+		anim_sprite.play(\"idle\")
+	
 	velocity.x = move_toward(velocity.x, speed * direction.x, accel)
 	velocity.y = move_toward(velocity.y, speed * direction.y, accel)
+	
+	if direction.x > 0:
+		anim_sprite.flip_h = false
+	elif direction.x < 0:
+		anim_sprite.flip_h = true
 	
 	move_and_slide()
 	
@@ -27,29 +50,62 @@ func _physics_process(delta: float) -> void:
 
 "
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_bkooe"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_xaehr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_yt4kw")
+"texture": ExtResource("1_j5r7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qc5lk")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_y1vwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d7bnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o2308")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_c8fvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hbixj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rxvg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g43vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_omly5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cblb"]
-size = Vector2(111, 116)
+size = Vector2(58, 130)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 2
 script = SubResource("GDScript_cgcdf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_bkooe")
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_xaehr")
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_6cblb")
 
 [node name="Camera2D" type="Camera2D" parent="."]

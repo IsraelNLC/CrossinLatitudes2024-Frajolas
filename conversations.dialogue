@@ -1,0 +1,128 @@
+~ lucas_reception
+
+Lucas: Hey, cousin! WELCOME TO BRAZIL! Have you enjoyed your trip?
+Emil: Hi, Lucas. It has been long, but peaceful. I'm still getting used to the warm weather.
+Lucas: You'll get used to it very very quickly! Summer here is intense, but full of goodness.
+Lucas: You'll love the countryside. It's very different from the capital. 
+Lucas: A calmer place, more nature... and the food is fantastic! It hits different! 
+Emil: I hope so. Everything here is so... a bit new at the moment. I'm a bit anxious.
+Lucas: Relax, man. We'll help you feel at home. 
+Lucas: And by the way, Grandma Laila is waiting you to prepare a snack for us. 
+Lucas: You should see her and ask if Grandma needs any help. 
+Emil: Now? I should pack my things first. It's been a long trip...
+Lucas: Don't worry, cous! I'll take the bags to the bedroom. Go and give Grandma a pep talk!
+
+=> END
+
+~ dialogo_antes_do_nivel_1
+
+Emil: Hi, Grandma. Is everything alright?
+Laila: Oh, Emil, darling. I'm fine, just a bit nostalgic. It's been so long since I've seen you!
+Laila: I think about how little you were and how much you've grown! 
+Laila: Enjoy your youth as it passes quickly!
+Emil: I don't even know how to enjoy it as much as you did... 
+Emil: Sometimes I feel confused about how to really enjoy it. 
+Emil: Maybe it's good to just live for the moment, as you say.
+Laila: Ah, my grandson, youth is such a precious time. 
+Laila: It's a time of discovery, of learning and growing. 
+Laila: Life can be wonderful if you learn to appreciate the little moments.
+Emil: You're absolutely right! Grandma, do you need any help cooking?
+Emil: Lucas said you were waiting for me to prepare a snack. 
+Emil: I think cooking could be a whole new experience.
+Laila: That's lovely to hear, Emil. I'm making cheese bread. Have you ever heard of it?
+Emil: Cheese bread? No. What's this?
+Laila: It's a typical local delight. 
+Laila: It's a dough made from starch, cheese, milk and eggs. 
+Laila: It's baked until it's golden and crispy on the outside, but soft on the inside.
+Laila: The recipe is very simple. We mix the starch with hot milk, butter and eggs.
+Laila: Then we add the grated cheese. Mash well, shape into balls and bake.
+Laila: Shall we begin?
+Emil: One second, Grandma!
+Lucas: Go give Grandma a hand, bro! I already put your things away.
+Grandpa Eino: Hi, grandson! Stop being lazy and go help your grandma. 
+
+=> END
+
+~ dialogo_depois_do_nivel_1
+
+Laila: Many thanks for your help, my grandson!
+Laila: I learned this recipe from my mother's neighbor. 
+Laila: It was a special moment, we would pause in time to drink coffee and eat this snack.
+Laila: I remember those simple days when life seemed slower and fuller.
+Emil: That sounds wonderful, Grandma. 
+Emil: Food really does have a way of bringing people together, doesn't it?
+Laila: My mother always used food to connect with her neighbors.
+Laila: It was a way of showing affection and friendship. 
+Laila: Those simple moments were the ones that brought most happiness.
+Emil: You never went to college, Grandma, but you seem so wise. Your happiness is inspiring!
+Laila: Life has taught me a lot, Emil. 
+Laila: But the most important thing is to find what makes you happiest. 
+Laila: Everyone has their own path. I'm glad you're here, exploring and seeking your own happiness.
+Emil: Grandma, I feel so inspired by all the kindness and affection I've received here. 
+Emil: I'd like to give something back. 
+Emil: I'm going to teach Lucas how to make karjalanpiirakka, a typical Finnish dish.
+Laila: That's lovely, Emil! I'm sure he'll appreciate it. 
+Laila: It's a great way to share a bit of your culture with him.
+
+=> END 
+
+~ dialogo_antes_do_nivel_2
+
+Emil: Hey, Lucas...I was thinking... you've been so welcoming and supportive. 
+Emil: At first, I felt hesitant and doubtful about what it would be like with you guys.
+Emil: But now I'm extremely grateful for the affection I've received.
+Emil: I'd like to make some nice memories with you too. How about cooking together? 
+Emil: I'll teach you how to make karjalanpiirakka.
+Lucas: Karjala... what? That sounds interesting. I'm up for it! What do we need to do?
+Emil: Karjalanpiirakka. These are typical Finnish rice cakes. 
+Emil: The recipe is simple: we make a thin rye dough, fill it with a creamy rice porridge and bake it.
+Emil: It's traditional and delicious.
+Lucas: Wow, that sounds great! Come on, buddy. Show me the way.
+
+=> END 
+
+~ dialogo_depois_do_nivel_2
+
+Emil: Actually, Lucas, I learned this recipe at school with my friends.
+Emil: In Finland, we have cooking classes where we learn traditional recipes.
+Emil: It was a really exciting experience. 
+Emil: Cooking with friends always makes the process more special.
+Emil: It gets me thinking about college. 
+Emil: Meeting new people and learning from them is one of the best parts of life.
+Emil: In university I could find many opportunities to learn and grow up both in my personal as well as professional life. 
+Emil: Who knows, maybe I could even apply to gastronomy? I'm quite good at it.
+Lucas: You're right, coz. College can be a great place to explore new things and discover more about yourself.
+Lucas: And who knows, you could open a Brazilian restaurant in Finland!
+Emil: That's true. I think I can learn a lot and also share what I know.
+Emil: That's what I've realized even during my short stay... the cross-cultural exchange is incredibly valuable.
+Emil: The more we open ourselves up to new experiences, the more we grow.
+Lucas: I'm glad you're feeling that way, Emil.
+Lucas: It's important to follow your heart and explore new possibilities.
+Lucas: Life is full of unexpected surprises. 
+Lucas: And we'll always be here to support you, Emil. 
+Lucas: Now let's eat, because this looks really delicious!
+
+=> END 
+
+~ dialogo_conclusao
+
+Emil: When I first came here, I was nervous, full of uncertainty and afraid of the unknown.
+Emil: But now I feel different. More confident, more at ease. 
+Emil: What about you, player? How do you feel about the future? 
+Emil: Sometimes life is much more about living and experiencing than choices. 
+Emil: It's a bit of a cliché what I'm about to say, but...
+Emil: Living the process with people who are important has made me realize that my path is being built at the right time. 
+Emil: Now, I prefer to focus on what matters, living moments with people I care about.
+Emil: That way, I'll be prepared to go through any perish in my life.
+Emil: I've learned that change can bring great opportunities. 
+Emil: That new experiences and connections can truly transform us.
+Emil: Every moment, every person we meet, has the potential to teach us something valuable.
+Emil: So remember to enjoy every moment. 
+Emil: Find your happiness in the little things and open yourself up to new possibilities.
+Emil: Because it's through these that we discover hidden parts of ourselves and what we want for our tomorrow.
+Emil:  Well... at least I managed to discover a lot. 
+Emil: Thank you for following me on this journey.
+Emil:  And may you also find the courage to live fully, here and now. 
+Emil: And if you can, with some company and something to eat.  
+
+=> END
