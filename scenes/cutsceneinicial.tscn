@@ -1,10 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8tmgtbta3qyq"]
+[gd_scene load_steps=3 format=3 uid="uid://b0f66ow58uwws"]
 
 [ext_resource type="Script" path="res://scenes/cutsceneinicial.gd" id="1_u3oif"]
-[ext_resource type="Texture2D" uid="uid://c24u1a5dn65fh" path="res://sprites/ui/emil.png" id="2_17sbw"]
+[ext_resource type="Texture2D" path="res://sprites/ui/emil.png" id="2_17sbw"]
 
 [node name="cutsceneinicial" type="Node2D"]
 script = ExtResource("1_u3oif")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(2000, 2000)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -372.0
+offset_top = -698.0
+offset_right = 1628.0
+offset_bottom = 1302.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 7
@@ -19,11 +32,3 @@ offset_bottom = 1074.0
 grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("2_17sbw")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)

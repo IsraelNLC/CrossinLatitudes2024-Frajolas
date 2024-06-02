@@ -19,4 +19,5 @@ Emil: Who knows? maybe I'll find the answers I'm looking for.
 Emil: Although I don't even know what I'm really looking for in this country. 
 Emil: Brazil... here I come. May this be a journey of new discoveries and, hopefully, some peace.
 
+set globalvars.isdialogueover = true
 => END

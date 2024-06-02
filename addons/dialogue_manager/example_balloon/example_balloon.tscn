@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
-[ext_resource type="Theme" uid="uid://ckmk8c0mx503h" path="res://sprites/ui/bgdialogtheme.tres" id="2_g4160"]
+[ext_resource type="Theme" uid="uid://bkmgyh0qfw31n" path="res://sprites/ui/bgdialogtheme.tres" id="2_g4160"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 [ext_resource type="FontFile" uid="uid://b2u6e32p726os" path="res://fonts/Inter-VariableFont_slnt,wght.ttf" id="3_lfqr1"]
-[ext_resource type="Texture2D" uid="uid://chy6ib1p4m3p6" path="res://sprites/ui/dialogue_character_box.png" id="5_rspk5"]
+[ext_resource type="Texture2D" path="res://sprites/ui/dialogue_character_box.png" id="5_rspk5"]
 [ext_resource type="FontFile" uid="uid://bjoyhjupq7e4n" path="res://fonts/Jua-Regular.ttf" id="6_ci1iy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
