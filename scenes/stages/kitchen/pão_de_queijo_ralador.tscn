@@ -58,7 +58,7 @@ animations = [{
 "speed": 1.0
 }]
 
-[node name="Cooking" type="Node2D"]
+[node name="Cooking2" type="Node2D"]
 
 [node name="parede" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qe5yv")

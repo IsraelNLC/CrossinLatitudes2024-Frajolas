@@ -1,15 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://c7vbwbdbf8vww"]
+[gd_scene load_steps=14 format=3 uid="uid://c7vbwbdbf8vww"]
 
 [ext_resource type="Texture2D" uid="uid://bk3xqkodjfrbr" path="res://sprites/stages/kitchen/animação pão de queijo/tileset parede cozinha.png" id="1_aiecx"]
 [ext_resource type="Texture2D" uid="uid://dcga4axkeaoq2" path="res://sprites/stages/kitchen/animação pão de queijo/balcão.png" id="2_hl8jw"]
-[ext_resource type="Texture2D" uid="uid://xmf8li412woa" path="res://sprites/stages/kitchen/animação pão de queijo/vó-tigela vazia.png" id="3_x6yr7"]
-[ext_resource type="Texture2D" uid="uid://cqg0fl4uefrvi" path="res://sprites/stages/kitchen/animação pão de queijo/vó-tigela cheia.png" id="4_r7twy"]
-[ext_resource type="Texture2D" uid="uid://chku53lwm428p" path="res://sprites/stages/kitchen/animação pão de queijo/ralando junto/ralando o queijo 1.png" id="5_cn65n"]
-[ext_resource type="Texture2D" uid="uid://yd1cgeqvslk1" path="res://sprites/stages/kitchen/animação pão de queijo/ralando junto/ralando o queijo 2.png" id="6_egxk0"]
-[ext_resource type="Texture2D" uid="uid://s43gqxfeuhr" path="res://sprites/stages/kitchen/animação pão de queijo/ralando junto/ralando o queijo 3.png" id="7_ypp6p"]
-[ext_resource type="Texture2D" uid="uid://bxpnyvovytmco" path="res://sprites/stages/kitchen/animação pão de queijo/ralando junto/ralando o queijo 4.png" id="8_o5uej"]
-[ext_resource type="Texture2D" uid="uid://dqfl4w4ddv13m" path="res://sprites/stages/kitchen/animação pão de queijo/ralando junto/ralando o queijo 5.png" id="9_evpy6"]
-[ext_resource type="Texture2D" uid="uid://2n60qgxdl3g6" path="res://sprites/stages/kitchen/animação pão de queijo/ralando junto/ralando o queijo 6.png" id="10_lghho"]
+[ext_resource type="Texture2D" uid="uid://pjyf3uxia1au" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo assado.png" id="3_e5c4w"]
+[ext_resource type="Texture2D" uid="uid://ctnixvqnwoc2w" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo-01.png" id="4_drffk"]
+[ext_resource type="Texture2D" uid="uid://ctj2u7w7da1fg" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo2.png" id="5_cebk1"]
+[ext_resource type="Texture2D" uid="uid://cbyaoh2r4anj6" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo3.png" id="6_4es63"]
+[ext_resource type="Texture2D" uid="uid://c1t4pd5gdws1" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo4.png" id="7_xjhj0"]
+[ext_resource type="Texture2D" uid="uid://pg14d2iwrbx2" path="res://sprites/stages/kitchen/animação pão de queijo/pão de queijo/pão de queijo5.png" id="8_jdniy"]
+[ext_resource type="Texture2D" uid="uid://iaphk4jupepf" path="res://sprites/character/emil/hand/idle.png" id="9_y6j4j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_imcce"]
 texture = ExtResource("1_aiecx")
@@ -18,44 +17,41 @@ texture = ExtResource("1_aiecx")
 [sub_resource type="TileSet" id="TileSet_qe5yv"]
 sources/0 = SubResource("TileSetAtlasSource_imcce")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xabg5"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_y5ebv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_x6yr7")
+"texture": ExtResource("3_e5c4w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_r7twy")
+"texture": ExtResource("4_drffk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cebk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4es63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xjhj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jdniy")
 }],
 "loop": true,
 "name": &"default",
-"speed": 1.0
+"speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_3kdx6"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_v10h8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_cn65n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_egxk0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_ypp6p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_o5uej")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_evpy6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_lghho")
+"texture": ExtResource("9_y6j4j")
 }],
 "loop": true,
-"name": &"default",
-"speed": 1.0
+"name": &"idle",
+"speed": 5.0
 }]
 
 [node name="Cooking" type="Node2D"]
@@ -70,30 +66,25 @@ position = Vector2(597.5, 576)
 scale = Vector2(2.87381, 1)
 texture = ExtResource("2_hl8jw")
 
-[node name="tigela_npc" type="AnimatedSprite2D" parent="."]
+[node name="massa_npc" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(340, 496)
+position = Vector2(347, 545)
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_xabg5")
-frame_progress = 0.22243
+sprite_frames = SubResource("SpriteFrames_y5ebv")
+frame = 3
+frame_progress = 0.41132
 
-[node name="ralador_npc" type="AnimatedSprite2D" parent="."]
+[node name="massa_player" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(335, 383)
+position = Vector2(747, 545)
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_3kdx6")
-frame_progress = 0.870807
+sprite_frames = SubResource("SpriteFrames_y5ebv")
+frame = 3
+frame_progress = 0.41132
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="hand_player" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(859, 496)
+position = Vector2(665, 542)
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_xabg5")
-frame_progress = 0.22243
-
-[node name="ralador2" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(854, 383)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_3kdx6")
-frame_progress = 0.885172
+sprite_frames = SubResource("SpriteFrames_v10h8")
+animation = &"idle"
